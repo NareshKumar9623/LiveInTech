@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "196605133572",
+    "project_id": "intern-personal",
+    "storage_bucket": "intern-personal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196605133572:android:c27bbfd21ad9dfeeee0651",
+        "android_client_info": {
+          "package_name": "com.liveintech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196605133572-j7qnsfjv9v6b9kpari916d0lea9uhe9l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liveintech",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "196605133572-28k2uc9g5639trqirontqucv881qn1i8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOOhlrrHOmhmGORAXBulO8ZgMQiZ20sPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196605133572-28k2uc9g5639trqirontqucv881qn1i8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
