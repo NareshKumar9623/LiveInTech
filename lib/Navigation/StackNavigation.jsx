@@ -5,6 +5,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Users from "../Admin/Users";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,7 @@ export default function StackNavigation() {
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="Register" component={Register} />
+                <Stack.Screen name="Admin" component={Users} />
             </Stack.Navigator>
         </NavigationContainer>
     );
