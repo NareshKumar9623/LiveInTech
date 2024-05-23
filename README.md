@@ -1,79 +1,127 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# User Registration App
 
-# Getting Started
+This project is a User Registration app developed as part of the Mobile App Developer role application at LiveIntuitions Technologies. The app is built using React-Native and Firebase, and it supports both user and admin functionalities.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Table of Contents
 
-## Step 1: Start the Metro Server
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Features
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **User Registration**: Users can register using their email and password.
+- **User Login**: Users can log in using their email and password or Google account.
+- **Admin Login**: Admins can log in using predefined credentials.
+- **User Deletion**: Admins have the privilege to delete users from the system.
 
-```bash
-# using npm
-npm start
+## Screenshots
 
-# OR using Yarn
-yarn start
-```
+![User Login](screenshots/user_login.png)
+*User Login Screen*
 
-## Step 2: Start your Application
+![Admin Dashboard](screenshots/admin_dashboard.png)
+*Admin Dashboard Screen*
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+![User List](screenshots/user_list.png)
+*List of Users*
 
-### For Android
+## Technologies Used
 
-```bash
-# using npm
-npm run android
+- React Native
+- Firebase Authentication
+- Firebase Firestore
 
-# OR using Yarn
-yarn android
-```
+## Installation
 
-### For iOS
+To get a local copy up and running, follow these simple steps:
 
-```bash
-# using npm
-npm run ios
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/NareshKumar1553/LiveInTech.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd LiveInTech
+    ```
+3. Install the dependencies:
+    ```sh
+    npm install
+    ```
+4. Link dependencies for iOS (if applicable):
+    ```sh
+    npx pod-install
+    ```
 
-# OR using Yarn
-yarn ios
-```
+## Usage
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+1. Start the application:
+    ```sh
+    npx react-native run-android
+    ```
+    or
+    ```sh
+    npx react-native run-ios
+    ```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+2. The app will launch on your emulator or connected device.
 
-## Step 3: Modifying your App
+### Admin Login Details
 
-Now that you have successfully run the app, let's modify it.
+- **Email**: admin@liveintech.co
+- **Password**: admin
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## File Structure
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+LiveInTech/
+├── android/
+├── ios/
+├── lib/
+│ ├── screens/
+│ │ ├── AdminDashboard.js
+│ │ ├── Login.js
+│ │ ├── Register.js
+│ │ └── UserList.js
+│ ├── components/
+│ │ ├── AdminHeader.js
+│ │ └── UserHeader.js
+│ ├── firebase/
+│ │ ├── config.js
+│ │ └── auth.js
+│ ├── App.js
+│ └── ...
+├── assets/
+├── screenshots/
+│ ├── user_login.png
+│ ├── admin_dashboard.png
+│ └── user_list.png
+├── .gitignore
+├── README.md
+└── package.json
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
+## Contributing
 
-### Now what?
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-# Troubleshooting
+## License
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-# Learn More
+## Contact
 
-To learn more about React Native, take a look at the following resources:
+Naresh Kumar S. - nareshkumar.s1553@gmail.com
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Project Link: [https://github.com/NareshKumar1553/LiveInTech](https://github.com/NareshKumar1553/LiveInTech)
